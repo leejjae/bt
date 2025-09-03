@@ -1,0 +1,1 @@
+{"src": "mnist", "tgt": "usps", "src_prior": 0.5, "tgt_prior": 0.5, "arch": "lenet", "seed": 43, "loss": "bce", "test_loss": 0.0763296600818634, "test_acc": 0.5038, "test_macro_f1": 0.3417225981352044, "test_auc": 0.6553304}

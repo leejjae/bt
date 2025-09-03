@@ -1,0 +1,1 @@
+{"src": "mnist", "tgt": "svhn", "src_prior": 0.3, "tgt_prior": 0.7, "arch": "lenet", "seed": 46, "loss": "pu", "test_loss": 0.21602618601322174, "test_acc": 0.377, "test_macro_f1": 0.35859398200134407, "test_auc": 0.5355308571428572}

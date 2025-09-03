@@ -1,0 +1,1 @@
+{"src": "cifar", "tgt": "cifar10c", "src_prior": 0.3, "tgt_prior": 0.7, "arch": "cifar_resnet18", "seed": 45, "loss": "bce", "test_loss": 0.10750810064077378, "test_acc": 0.6996, "test_macro_f1": 0.42781318580513467, "test_auc": 0.6017624761904762}
