@@ -1,5 +1,5 @@
 === Evaluation Summary (mean ± std across seeds, grouped by loss_type) ===
-PAIR	PRIORS	ARCH	LOSS	N	ACC	MacroF1	AUC	TestLoss
+    PAIR	      PRIORS	    ARCH	   LOSS	N	      ACC	        MacroF1	          AUC	        TestLoss
 cifar->cifar10c	(0.3,0.7)	cifar_resnet18	bce	5	0.6925 (0.010)	0.4422 (0.030)	0.5837 (0.023)	0.1109 (0.007)
 cifar->cifar10c	(0.3,0.7)	cifar_resnet18	pu	5	0.4879 (0.038)	0.4841 (0.043)	0.7330 (0.012)	0.2973 (0.042)
 cifar->cifar10c	(0.3,0.7)	cnn_cifar	    bce	5	0.6815 (0.033)	0.4918 (0.090)	0.5802 (0.097)	0.0730 (0.002)

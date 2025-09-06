@@ -487,7 +487,7 @@ def train(classifier, positive_dataset, unlabeled_dataset, val_dataset, tot_test
     # 전체 텐서 꺼내기: (X, Y_true, Y)
     pos_X, pos_Yt, pos_Y = pos_tensor.tensors
     unl_X, unl_Yt, unl_Y = unl_tensor.tensors
-
+ 
     # # unlabeled 라벨 정리: 0 -> -1
     # # (원본 유지 원하면 clone() 후 수정)
     # unl_Y = unl_Y.clone()

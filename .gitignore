@@ -1,4 +1,4 @@
-data
-checkpoint
-checkpoint_500ep
-__pycache__
+checkpoint/
+checkpoint_500ep/
+data/
+metric/

@@ -19,14 +19,14 @@ def fmt_mean_std(arr):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--in_dir", type=Path, default=Path("./metric/lin"),
-                    help="evaluate.py가 만든 결과 폴더 (예: ./metric/lin)")
+    ap.add_argument("--in_dir", type=Path, default=Path("./metric/st"),
+                    help="evaluate.py가 만든 결과 폴더 (예: ./metric/st)")
     ap.add_argument("--out_txt", type=Path, default=None,
                     help="요약 txt 경로 (기본: in_dir/summary_mean_std_by_loss.txt)")
     args = ap.parse_args()
 
     if args.out_txt is None:
-        args.out_txt = args.in_dir / "summary_mean_std_by_loss4.txt"
+        args.out_txt = args.in_dir / "summary_mean_std_by_loss5.txt"
 
     # 폴더 계층 안의 results.jsonl 를 전부 찾는다 (과거 패턴도 겸용하고 싶으면 + results_*.jsonl 추가)
     files = sorted(set(

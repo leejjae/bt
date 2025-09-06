@@ -706,11 +706,19 @@ class TransformFixMatch(object):
         else:
             raise ValueError(f"Unsupported dataset for FixMatch: {dataset_name}")
 
-        self.normalize = transforms.Compose([
-            transforms.ToTensor(),
-            transforms.Resize(crop_size, interpolation=InterpolationMode.BILINEAR),
-            transforms.Normalize(mean=mean, std=std)
-        ])
+        if dataset_name in ['mnist', 'usps', 'svhn']:
+            self.normalize = transforms.Compose([
+                transforms.Grayscale(num_output_channels=1),
+                transforms.Resize(crop_size, interpolation=InterpolationMode.BILINEAR),
+                transforms.ToTensor(),
+                transforms.Normalize(mean=mean, std=std)
+            ])
+        else:
+            self.normalize = transforms.Compose([
+                transforms.Resize(crop_size, interpolation=InterpolationMode.BILINEAR),
+                transforms.ToTensor(),
+                transforms.Normalize(mean=mean, std=std)
+            ])
 
     def weak_only(self):
         return self.weak
